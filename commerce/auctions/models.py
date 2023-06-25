@@ -13,7 +13,7 @@ class Listing(models.Model):
     description = models.TextField()
     staring_bid = models.IntegerField()
     category = models.CharField(max_length=64)
-    image_link = models.CharField(max_length=200 , default=none , blank=True , null=True , created_at = models.DateTimeField(auto_now_add=True))
+    image_link = models.CharField(max_length=200 , default=None , blank=True , null=True , created_at = models.DateTimeField(auto_now_add=True))
     
 #Model for bids
 class Bid(models.Model): 
